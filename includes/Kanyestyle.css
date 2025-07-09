@@ -1,0 +1,483 @@
+/*nav styling*/
+/*nav styling*/
+
+
+
+
+.navbar-toggler {
+
+    color: white !important;
+    /* Set the color to white */
+
+}
+
+
+
+.navbar-toggler-icon {
+
+    color: white !important;
+
+}
+
+
+
+#brand {
+
+    font-weight: bold;
+
+    font-family: Poppins;
+
+    color: white;
+
+}
+
+
+
+.nav i {
+
+    color: white;
+
+}
+
+.input-group-text {
+
+    color: white;
+    /* change search icon to white*/
+
+}
+
+
+
+.form-control::placeholder {
+
+    color: white;
+    /* Change placeholder text color */
+
+}
+
+
+
+/* Custom CSS to style the offcanvas side menu */
+
+.offcanvas {
+
+    background-color: #343a40;
+    /* Dark background color */
+
+    color: white;
+    /* Text color */
+
+}
+
+
+
+.offcanvas-header {
+
+    background-color: #000000;
+    /* Dark background color for header */
+
+    border-bottom: 1px solid #ffffff;
+    /* Dark border color */
+
+}
+
+#close {
+
+    color: #eee;
+
+    background-color: #eee;
+
+}
+
+.offcanvas-body {
+
+    padding: 1rem;
+    /* Add padding for content */
+
+}
+
+
+
+.offcanvas-title {
+
+    color: white;
+    /* Text color for title */
+
+}
+
+
+
+.offcanvas-nav .nav-link:hover {
+
+    font-weight: bold;
+
+    color: black;
+    /* Text color on hover */
+
+}
+
+
+
+
+
+
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-image: url("../images/Kanye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+.about .contentBx {
+    background: #bb5e6a;
+    padding: 100px;
+    width: 100%;
+}
+
+.text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.Rules {
+    background: #944146;
+    padding: 100px;
+    text-align: center;
+    width: 50%;
+}
+
+.Rules .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.Rules .container .RulesBx img {
+    max-width: 100px;
+}
+
+.Rules .container .RulesBx h2 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content {
+    padding-top: 60px;
+    /* Adjust this value to create space for the navigation bar */
+}
+
+.bullet-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+
+
+.tickets-container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Adjust this value as needed */
+    background-color: #9e3645;
+}
+
+.ticket-header h2 {
+    color: #E5E4E2;
+}
+
+.ticket-header h3 {
+    color: #c2a919;
+}
+
+.ticket-header h4 {
+    color: #bb752e;
+}
+
+.Ticket {
+    width: 300px;
+    padding: 20px;
+    background-color: #c8a9a9;
+    border: 2px solid hsla(0, 0%, 80%, 0.341);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.ticket-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ticket-details {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.ticket-details p {
+    margin: 5px 0;
+}
+
+.ticket-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.book-now-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c3d0dd;
+    color: #000000ef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+.book-now-btn:hover {
+    background-color: #aa3f4f;
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the modal */
+    width: 60%;
+    /* Full width */
+    max-width: 400px;
+    height: auto;
+    /* Allow height to adjust based on content */
+    max-height: 80%;
+    /* Maximum height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #fff;
+    border-radius: 10px;
+    /* Add  border radius for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* shadow for depth */
+
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    color: #000;
+    /* Set text color to black */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    position: absolute;
+    /* Position absolute for custom positioning */
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.Venues {
+    position: relative;
+    padding: 100px;
+    background: #8b4a58;
+    text-align: center;
+}
+
+
+.Venues .container .contentBx p {
+    font-style: italic;
+}
+
+.Venues.container .contentBx h4 {
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: #000000;
+}
+
+
+.FACILITIES {
+    position: relative;
+    padding: 100px;
+    background: #7d383a;
+    text-align: center;
+}
+
+
+.FACILITIES .container .contentBx p {
+    font-style: italic;
+}
+
+.FACILITIES.container .contentBx h4 {
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: #000000;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .upper-footer {
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        text-align: center;
+    }
+
+    .lower-footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .lower-footer ul {
+        padding: 0;
+        align-self: center
+    }
+
+    .footer-upper-b-p {
+        margin: 20px 0;
+    }
+
+    .footer {
+
+        padding: 30px 0;
+
+
+    }
+}
+
+
+
+.footer .social-icons i {
+
+    font-size: 1.5em;
+
+    color: #eee;
+
+    margin: 0 5px;
+
+}
+
+
+
+#hide-me {
+    display: block;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-shadow: #000000 !important;
+}
+
+.nav-link:hover {
+    opacity: 0.7 !important;
+}
+
+.search-input {
+    color: #fff !important;
+}
+
+.search-input::placeholder {
+    color: #fff !important;
+}
+
+@media screen and (max-width:700px) {
+    .about {
+        width: 100% !important;
+    }
+
+    .Rules {
+        width: 100% !important;
+    }
+
+    .Ticket {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Scroll to Top Button styles */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #932533;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #a71c3a;
+}
+
+#countdown {
+    font-size: 20px;
+    background-color: #9e3645;
+    font-style: bold;
+    text-align: center;
+}

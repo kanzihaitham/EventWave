@@ -1,0 +1,241 @@
+/*font link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family:  Poppins;
+    margin: 0;
+    background-color: #000;
+   overflow-x: hidden;
+}
+
+/* image sliding effect--------------------------------------------------------------------------------------------*/
+.slider{
+    height: 120vh; /* Equal to screen height +20 */
+    position: relative; /* so items can overlap each other relatively*/
+}
+.slider .list .item{
+    position: absolute;/* bardo to overlap */
+    inset: 0 0 0 0; /* pos from left r t b of slider class*/
+    overflow: hidden; /* so stuff outside doesnt ruin design and is hidden*/
+    opacity: 0;  /* set initial opacity to zero */
+    transition: .5s; /* pops up in .5 */
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* so image not distorted */
+}
+.slider .list .item::after{ /* creates gradient overlay fades out bottom part of each item */
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Precisely positioned within each item. */
+    left: 0; /* Aligned with the left edge of each item. */
+    bottom: 0;
+    background-image: linear-gradient( /* Creates a gradient overlay from solid black at the bottom to transparent at the top. */
+        to top, #000 10%, transparent /*from b to t starting w black at 20 perc till trans at top*/
+    );
+}
+#div3 img {
+    width: 100%;
+}
+.slider .list .item .content{
+    position: absolute; 
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1; /* so overlaps after element*/
+    color: #eee;
+    font-family: Poppins;
+}
+
+/* font work */
+.slider .list .item .content p:nth-child(1){  /*1st p tag in content caps w spaes */
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider .list .item .content h2{
+    font-size: 100px;
+    margin: 0;
+}
+.slider .list .item.active{ /* so only active item is appearing, z ensures its on top of everyth else */
+    opacity: 1;
+    z-index: 10;
+}
+
+@keyframes showContent {     /* animation for showing content ie moving it vertically, removing any blur effect, and making it fully opaque*/
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.slider .list .item.active p:nth-child(1), /* first paragraph inside an active item mov para down by 30 make it trans and blur 20 */
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+    /* apply anim with duration of 0.5s w delay 0.7 slow bein fast middle slow end runs once and stays at last state */
+}
+.slider .list .item.active h2{ /*these 2 show up after first p*/
+    animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+
+/*styling the arrows on side*/
+.arrows{
+    position: absolute;
+    top: 40%;
+    right: 12.2%;
+    z-index: 100;
+}
+.arrows button{
+    background-color: #eee5;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 45%;
+    font-size: xx-large;
+    color: #eee;
+    transition: .5s;
+    overflow-y: hidden;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: black;
+}
+
+.book{
+    position: absolute;
+    top: 46%;
+    right: 11%;
+    z-index: 100;
+}
+
+/*thumbnail style*/
+
+.thumbnail{ /* Position the thumbnail container */
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: auto;  /* Enable scrolling if necessary */
+    justify-content: center;
+}
+.thumbnail::-webkit-scrollbar{ /* Hide the scrollbar in WebKit browsers eg safari google etc */
+    width: 0;
+}
+
+.thumbnail .item{ /* Style each thumbnail item */
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.thumbnail .item img{ /* Style the images inside thumbnail items */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item.active{ 
+    filter: brightness(1.5);
+}
+.thumbnail .item .content{ /* Style the content inside each thumbnail item */
+    position: absolute;
+    inset: auto 10px 10px 10px; /* padding */
+    color: white;
+}
+
+@media screen and (max-width: 678px) { /* Media query for smaller screens */
+    .thumbnail{ /* Adjust thumbnail alignment for smaller screens */
+        justify-content: start;
+    }
+    .slider .list .item .content h2{ /* decrease the font size of content headings */
+        font-size: 50px;
+    }
+    .arrows{ /* Adjust the position of arrows for smaller screens */
+        top: 65%;
+        left: 40%;
+    }
+    .book{ /* Adjust the position of book for smaller screens */
+        top: 60%;
+        right: 35%;
+    }
+}
+
+/*div 2,3,4,5 styling-------------------------------------------------------------------------------------------*/
+#div2{
+    color: white;
+    text-align: center;
+}
+
+#div3{
+    overflow-x: hidden;
+}
+
+.imgs {
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.networklogos{
+    width: 80px;
+    height: 80px;
+}
+
+.overlay-content {
+    /* transform: translateY(-50%); */
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 678px) { /* Media query for smaller screens */
+    .overlay-content{ /* Adjust thumbnail alignment for smaller screens */
+        justify-content: start;
+        transform: translate(-50%, -40%);
+    }
+    .imgs{ /* decrease the font size of content headings */
+        font-size: 1px;
+        color: transparent;
+    }
+    #budget{ /* Adjust the position of arrows for smaller screens */
+        /* top: 10%; */
+        /* position: relative; */
+        font-size: 5px;
+        margin: 1px;
+        padding: 1px;
+    }
+} 
+
+#logodiv{
+    background-color: rgb(233, 56, 56);
+    color: #fff; 
+    font-family: Poppins;
+    align-content: center;
+}
+
+.invalid-email {
+    border-color: red;
+}
+
+

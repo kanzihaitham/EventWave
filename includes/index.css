@@ -1,0 +1,554 @@
+body{
+    padding: 0 ; 
+    margin : 0;
+    font-family: sans-serif;
+    background-color: #1a1a1a !important;
+overflow-x: hidden;
+color : white ;
+}
+
+a{text-decoration: none;}
+li{list-style: none;}
+img{width: 100%;}
+.c-container{
+width : 90%;
+max-width:1000px;
+}
+
+/*nav styling*/
+nav{
+  background-color: rgba(57, 53, 53, 0.5); /* Grey color with 50% opacity */
+}
+.nav-link{
+  color: white !important;
+}
+.navbar-toggler {
+  color: white !important; /* Set the color to white */
+}
+.navbar-toggler-icon {
+  color: white !important;
+}
+#brand{
+  font-weight: bold;
+  font-family:  Poppins;
+  color: white;
+}
+.nav i {
+  color: white;
+}
+.input-group-text{
+  color: white; /* change search icon to white*/
+}
+.form-control::placeholder {
+  color: white; /* Change placeholder text color */
+}
+/* Custom CSS to style the offcanvas side menu */
+.offcanvas {
+  background-color: #343a40; /* Dark background color */
+  color: white; /* Text color */
+}
+.offcanvas-header {
+  background-color: #000000; /* Dark background color for header */
+  border-bottom: 1px solid #ffffff; /* Dark border color */
+}
+#close{
+  color: #eee;
+  background-color: #eee;
+}
+.offcanvas-body {
+  padding: 1rem; /* Add padding for content */
+}
+.offcanvas-title {
+  color: white; /* Text color for title */
+}
+.offcanvas-nav .nav-link:hover {
+  font-weight: bold;
+  color: black; /* Text color on hover */
+}
+.nav-search input::placeholder {
+color :white;
+}
+.nav-search span {
+  color : white ;
+}
+
+/* main banner*/
+.c-main-banner{
+  position: relative;
+    text-align: center;
+    background: url("../images/header2.jpg");
+    height: 80vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color : white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   background-attachment: fixed;
+  
+}
+.c-main-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Move the overlay behind the content */
+  background-color: #e54245 ;
+  opacity: 0.4;
+}
+.c-main-banner h1 {
+  font-weight: 900;
+  font-size:55px;
+  margin : 0 0 15px 0;
+}
+.c-main-banner p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* img slider*/
+.c-img-slider{
+    margin-top : -6%;
+    position: relative;
+    z-index: 1;
+}
+.slide_wrap{
+    width: 100%; padding: 10px 20px;
+  
+    box-sizing: border-box;
+
+   
+  }
+  .slide_show{
+
+    width: 1108px;
+    overflow: hidden;
+   
+
+    margin: 10px auto;
+  }
+  .slide_show .slide_img{
+    width: 5000px; overflow: hidden;
+  }
+  .slide_show .slide_img > div{
+    float: left; width: 280px; padding: 5px;
+  }
+  .slide_btn a{
+    position: absolute;  top: 60%;  
+    transform: translateY(-50%);
+    color: #7c838b;
+    width: 60px; height: 60px; line-height: 58px;
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.3s;
+  }
+  .slide_show .slide_img > div {
+    float: left;
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.5s ease; /* Added transition for smooth animation */
+    box-sizing: border-box;
+}
+
+.slide_show .slide_img > div:nth-child(odd) {
+    transform-origin: left center; /* Set the transform origin for odd-numbered slides to left center */
+}
+
+.slide_show .slide_img > div:nth-child(even) {
+    transform-origin: right center; /* Set the transform origin for even-numbered slides to right center */
+}
+
+/* Optional: Add hover effect for scaling */
+.slide_show .slide_img > div:hover {
+    transform: scale(1.1);
+}
+
+  
+.slide_btn a.prev{left: 0%}
+.slide_btn a.next{right: 0%;}
+    /*icons bar section*/
+    .c-icons-bars{
+      padding : 50px 50px ;
+    }
+ .c-icon-cards-container{
+  color : white ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+ .c-icon-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .c-icon-card i{
+font-size: 50px; 
+margin-right: 15px;
+}
+.c-icon-card h3{
+font-size: 23px;
+}
+.c-icon-card span{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+  /*info section*/
+  .c-info {
+    position: relative;
+    background-image: url("../images/kanye.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 170px 0;
+    z-index: 1; /* Ensure the content is above the black layer */
+}
+
+.c-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Move the overlay behind the content */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+
+.c-info-container {
+    text-align: center;
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+  .c-info-header{
+    margin-top:0;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+  .c-info-firstc h2{
+    
+    margin-bottom: 5px;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+  .c-info-container p{
+font-size: 19px;
+  }
+/*cards section*/
+
+.c-card-concerts{
+  background-image : url("../images/mic2.jpg");
+  background-repeat: no-repeat;
+}
+.c-card-sport{
+  background-image : url("../images/sportss.jpg");
+  background-repeat: no-repeat;
+}
+.c-card-comedy{
+  background-image : url("../images/comedy.jpg");
+  background-repeat: no-repeat;
+}
+.c-card-festival{
+  background-image : url("../images/WIRELESS_2022.jpeg");
+  background-repeat: no-repeat;
+}
+
+.c-card-concerts::before {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+.c-card-sport::before {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(31,106,145,0.5) 0%, rgba(93,168,115,0.5) 100%);
+}
+.c-card-comedy::before {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  opacity: 0.5;
+  background-color: #FFE53B;
+}
+.c-card-festival::before {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+.c-cards-wrapper{
+  display: flex;
+}
+.c-card{
+  position: relative;
+  padding : 100px 0 50px 0px;
+  color : white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  flex-grow: 1;
+  border-radius: 15px;
+  height: 80vh;
+  z-index:1;
+  transition: transform 0.3s ease;
+}
+.c-card:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+.c-card:hover::before{
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.c-card h2{
+  font-size: 30px;
+}
+.c-card a{
+  color : white ;
+  font-size : 17px;
+  border : 1px solid white ;
+  padding : 10px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.c-card a:hover{
+background-color: #9e7427;
+border:none
+}
+/*sponsors*/
+.c-sponsors{
+  padding : 50px 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.c-sponsors img {
+  width : 150px;
+}
+.c-sponsors h3{
+  letter-spacing: 5px;
+  color : #747474;
+
+}
+/*footer*/
+
+
+.footer {
+  color : white ;
+    padding : 60px 0px 100px;
+    text-align: center;
+    
+   
+  }
+  .footer .social-icons i  {
+    font-size: 1.5em;
+    color: white;
+    margin: 0 5px;
+  }
+  .upper-footer{
+    display: flex ;
+    justify-content: space-between;
+    border-bottom: 1px dotted grey;
+  }
+  .upper-footer h2 , .lower-footer h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .upper-footer p{
+    font-size: 15px;
+  }
+  .footer-upper-b-p{
+  margin : 40px 0 40px 0;
+  }
+  
+  .footer-useful-links{
+    text-align: center;
+  }
+  
+  .footer-useful-links a{
+    color : white ;
+    text-decoration: none;
+  display: block;
+  }
+  .lower-footer{
+    margin-top : 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer-ul-navbar-nav{
+    display: flex;
+    gap: 25px;
+    align-self: center;
+    padding:0;
+  }
+  .footer-ul-navbar-nav a{
+  text-decoration: none;
+  color : white ;
+  }
+  
+  
+    
+    @media screen and (max-width: 850px) {
+      .upper-footer{
+      align-items: center;
+        flex-direction: column;
+        border-bottom : 1px solid grey;
+        text-align: center;
+      }
+      .lower-footer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+      }
+      .lower-footer ul {
+        padding: 0;
+  align-self: center 
+     }
+  
+      .footer-upper-b-p{
+          margin : 20px 0 ;  
+          }
+      .footer {
+           
+              padding : 30px 0;
+              
+             
+            }
+    }
+
+/*media queries*/
+
+@media screen and (max-width:1110px){
+  .slide_show{
+
+    width: 58%;
+  }
+}
+@media screen and (max-width:1000px){
+  .c-cards-wrapper{
+flex-wrap: wrap;  }
+  .c-card{
+    flex-basis : 50%;
+  
+}
+.c-icon-card{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+}
+.c-icon-card i {
+  margin : 0;
+}
+.c-sponsors{
+  flex-direction: column;
+}
+}
+  @media screen and (max-width: 768px) {
+  
+  .slide_btn a{
+      top: 50%;}
+      .c-main-banner h1 {
+     
+        font-size:30px;
+     
+      }
+      .c-main-banner p {
+          font-size: 15px;
+        
+      }
+      .c-card{
+        flex-basis : 100%;
+        height : 60vh;
+      
+    }
+    .c-icon-cards-container{
+      flex-wrap: wrap;
+      gap: 55px;
+    }
+    .c-icon-card{
+      flex-basis: 100%;
+      gap:20px
+    }
+    
+   
+  }
+  
+  @media screen and (max-width: 850px) {
+    .upper-footer{
+    align-items: center;
+      flex-direction: column;
+      border-bottom : 1px solid grey;
+      text-align: center;
+    }
+    .lower-footer{
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .lower-footer ul {
+      padding: 0;
+align-self: center 
+   }
+    .footer-upper-b-p{
+        margin : 20px 0 ;  
+        }
+    .footer {
+            padding : 30px 0;
+          }
+  }
+  
+  
+   
+  
+  
+    
+    

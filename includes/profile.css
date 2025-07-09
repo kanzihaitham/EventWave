@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://c.wallhere.com/photos/99/3a/Yeezus_Kanye_West-222302.jpg!d');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+
+}
+
+nav {
+  background-color: rgba(57, 53, 53, 0.5);
+  /* Grey color with 50% opacity */
+}
+
+.nav-link {
+  color: #fff !important;
+  text-shadow: 0px 0 2px #000;
+}
+
+.navbar-toggler {
+  color: white !important;
+  /* Set the color to white */
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.search-bar,
+.search-icon {
+  color: #ffffff !important;
+}
+.fa-search{
+  color:#fff;
+}
+.search-bar::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+/* Firefox */
+
+#brand {
+  font-weight: bold;
+  font-family: Poppins;
+  color: white;
+}
+
+.nav i {
+  color: white;
+}
+
+.input-group-text {
+  color: white;
+  /* change search icon to white*/
+}
+
+.form-control::placeholder {
+  color: white;
+  /* Change placeholder text color */
+}
+
+/* Custom CSS to style the offcanvas side menu */
+.offcanvas {
+  background-color: #343a40;
+  /* Dark background color */
+  color: white;
+  /* Text color */
+}
+
+.offcanvas-header {
+  background-color: #000000;
+  /* Dark background color for header */
+  border-bottom: 1px solid #ffffff;
+  /* Dark border color */
+}
+
+#close {
+  color: #eee;
+  background-color: #eee;
+}
+
+.offcanvas-body {
+  padding: 1rem;
+  /* Add padding for content */
+}
+
+.offcanvas-title {
+  color: white;
+  /* Text color for title */
+}
+
+.offcanvas-nav .nav-link:hover {
+  font-weight: bold;
+  color: black;
+  /* Text color on hover */
+}
+
+.Dcontainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: rgba(240, 248, 255, 0.281);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dcontainer .profile-pic {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.profile-pic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-pic i {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: 2px solid #fff;
+  padding: 2px;
+  border-radius: 100%;
+
+
+}
+
+.profile-name {
+  margin: 0 10px 10px;
+  text-align: center;
+  margin-bottom: 40%;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: initial;
+}
+
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+  transition: 300ms;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #333;
+}
+
+.sidebar li:hover {
+  transform: scale(1.1);
+
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: grey;
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 40px rgba(169, 169, 169, 0.5);
+}
+
+.content h1,
+h2,
+h5 {
+  margin-bottom: 10px;
+
+}
+
+.events,
+.information,
+.payment {
+  border: 1px solid black;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(5, 16, 58, 0.5);
+  min-height: 400px;
+}
+
+
+nav {
+  position: relative !important;
+}
+
+.hide {
+  display: none;
+}
+
+#bigPImage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2323238f;
+  z-index: 9999999999 !important;
+}
+
+#bigPImage img {
+  height: 70%;
+  margin: auto;
+  top: 15%;
+  position: relative;
+  display: block;
+}
+
+#bigPImage #closeImage {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 24px;
+  background-color: #bb2124;
+  border-radius: 100%;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#bigPImage #closeImage:hover {
+  opacity: 0.7;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.events-container .event {
+  height: 270px;
+  width: 200px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.events-container .event img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  padding: 5px 4px;
+}
+
+
+
+.events-container .event h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+
+
+
+
+.inputBox {
+  position: relative;
+  width: 250px;
+  padding: 10px 8px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  background: #000;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+
+}
+
+
+.inputBox input:valid~span,
+.inputBox input~span {
+  color: yellow;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1d2b3a;
+  border-left: 1px solid yellow;
+  border-right: 1px solid yellow;
+  letter-spacing: 0.2em;
+
+}
+
+.inputBox input:valid,
+.inputBox input {
+  border: 1px solid yellow;
+}
+
+.updateinfo {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-left: 250px;
+  border-radius: 80px;
+  font-size: 0.9em;
+}
+
+.updatepayinfo {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-left: 250px;
+  border-radius: 80px;
+  font-size: 0.9em;
+}
+
+.line {
+  height: 1px;
+  background-color: white;
+  /* Adjust color as needed */
+  margin-bottom: 200px;
+  /* Adjust spacing as needed */
+}
+
+#black {
+  background-color: #000000;
+}
+
+.divider {
+  border-top: 1px solid white;
+  /* White line divider */
+  margin: 1rem 0;
+  /* Adjust margin as needed */
+}
+
+#black {
+  background-color: #000000;
+}
+
+.divider {
+  border-top: 1px solid white;
+  /* White line divider */
+  margin: 1rem 0;
+  /* Adjust margin as needed */
+}
+
+.footer {
+  background-color: #000000;
+  color: #eee;
+  padding: 2em;
+}
+
+.footer h2,
+.footer p {
+  color: #fff;
+  /* Make text color white */
+}
+
+.footer .social-icons i {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.footer .text-white {
+  color: #fff;
+  /* Make anchor text color white */
+}
+
+.footer-ul-navbar-nav {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.footer-container {
+  background-color: black;
+}
+
+                                            /* template */
+
+
+.account-settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+  margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+  margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa8b9;
+}
+.account-settings .about {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.account-settings .about h5 {
+  margin: 0 0 15px 0;
+  color: #007ae1;
+}
+.account-settings .about p {
+  font-size: 0.825rem;
+}
+.form-control {
+  border: 1px solid #cfd1d8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: .825rem;
+  background: #ffffff;
+  color: #2e323c;
+}
+
+.card {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+}
+.form-control{
+  background-color: #fff0 !important;
+  color: #fff !important;
+}
+.form-control::placeholder{
+  color: #fff !important;
+}

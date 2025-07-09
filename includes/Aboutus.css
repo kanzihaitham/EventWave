@@ -1,0 +1,103 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/*Sarah Client nav*/
+nav{
+    background-color: rgba(57, 53, 53, 0.5); /* Grey color with 50% opacity */
+  }
+.nav-link{
+    color: white;
+}
+
+.navbar-toggler {
+    color: white !important; /* Set the color to white */
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+#brand{
+    font-weight: bold;
+    font-family:  Poppins;
+    color: white;
+}
+
+.nav i {
+    color: white;
+}
+
+.input-group-text{
+    color: white; /* change search icon to white*/
+}
+
+.form-control::placeholder {
+    color: white; /* Change placeholder text color */
+}
+
+/* Custom CSS to style the offcanvas side menu */
+.offcanvas {
+    background-color: #343a40; /* Dark background color */
+    color: white; /* Text color */
+}
+
+.offcanvas-header {
+    background-color: #000000; /* Dark background color for header */
+    border-bottom: 1px solid #ffffff; /* Dark border color */
+}
+#close{
+    color: #eee;
+    background-color: #eee;
+}
+.offcanvas-body {
+    padding: 1rem; /* Add padding for content */
+}
+
+.offcanvas-title {
+    color: white; /* Text color for title */
+}
+
+.offcanvas-nav .nav-link:hover {
+    font-weight: bold;
+    color: black; /* Text color on hover */
+}
+
+#black{
+    background-color: #000000;
+  }
+  
+  .divider {
+    border-top: 1px solid white; /* White line divider */
+    margin: 1rem 0; /* Adjust margin as needed */
+  }
+  
+  .footer {
+    background-color: #000000;
+    color: #eee;
+    padding: 2em;
+  }
+  
+  .footer h2, .footer p {
+    color: #fff; /* Make text color white */
+  }
+  
+  .footer .social-icons i {
+    font-size: 1.5em;
+    color: #fff; 
+    margin: 0 5px;
+  }
+  
+  .footer .text-white {
+    color: #fff; /* Make anchor text color white */
+  }
+  
+  .footer-ul-navbar-nav {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footer-container {
+    background-color: black;
+  }
